@@ -1,0 +1,36 @@
+.hero {
+  background-image: url('/static/img/bg.jpg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 6rem 2rem;
+  color: rgb(5, 5, 5);
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(189, 141, 141, 0.35);
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.button--primary {
+  background-color: #454e67;
+  border-radius: 10px;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.1rem;
+}
+
+.button--primary:hover {
+  background-color: #262d41;
+}
